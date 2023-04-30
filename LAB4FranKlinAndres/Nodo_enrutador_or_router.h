@@ -74,7 +74,7 @@ void enrutador::Agregar_Conexion(const string &name, const string &anterior, int
 void enrutador::TablaConexiones()
 {
 
-    cout << " \t";// PRIMERA PARTE  A B C D F  (SUPERIOR)
+    cout << " \t";// PRIMERA PARTE  A B C D F E , , , (SUPERIOR)
     for(it=conexiones.begin();it!=conexiones.end();it++){
         cout << it->first << "\t";
     }

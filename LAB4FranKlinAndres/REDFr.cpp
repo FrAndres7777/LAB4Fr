@@ -397,7 +397,7 @@ void red::GenerarRedAleatoria()
         nodo = *i;//NODO
         for(int j=0;j<num_enlaces;j++){
             string nodo2;
-            //PARA QUE SEA MUY ALEATORIA PONEMOS UNA VARIABLE -___ ENLACE ___-
+            //PARA QUE SEA MUY ALEATORIA PONEMOS UNA VARIABLE -_____ ENLACE ____--
             int enlace = rand()%(l_nodos.size());//P POCISION ALEATORIA
             int pos = 0;
             for(auto nombre=l_nodos.begin();nombre!=l_nodos.end();nombre++){
