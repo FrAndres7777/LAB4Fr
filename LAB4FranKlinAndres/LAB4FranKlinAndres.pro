@@ -7,4 +7,5 @@ SOURCES += \
         main.cpp
 
 HEADERS += \
+    REDFr.h \
     enrutador_or_router.h
