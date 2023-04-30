@@ -1,7 +1,11 @@
 
 #ifndef REDFR_H
 #define REDFR_H
-
+#include <list>
+#include <fstream>
+#include<stdlib.h>
+#include<time.h>
+#include "Nodo_enrutador_or_router.h"
 
 class red
 {

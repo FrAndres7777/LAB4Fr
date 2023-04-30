@@ -1,6 +1,6 @@
 
-#ifndef ENRUTADOR_OR_ROUTER_H
-#define ENRUTADOR_OR_ROUTER_H
+#ifndef NODO_ENRUTADOR_OR_ROUTER_H
+#define NODO_ENRUTADOR_OR_ROUTER_H
 #include <iostream>
 #include <map>
 #include <utility>
@@ -111,4 +111,4 @@ void enrutador::TablaCostos()
 
 
 
-#endif // ENRUTADOR_OR_ROUTER_H
+#endif // NODO_ENRUTADOR_OR_ROUTER_H

@@ -4,8 +4,9 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        REDFr.cpp \
         main.cpp
 
 HEADERS += \
-    REDFr.h \
-    enrutador_or_router.h
+    Nodo_enrutador_or_router.h \
+    REDFr.h
