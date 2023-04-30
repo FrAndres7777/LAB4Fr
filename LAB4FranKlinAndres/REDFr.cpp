@@ -338,7 +338,7 @@ bool red::ComprobarConexion(const string &nodo, const string &nodo2)
 
 void red::LeerTexto(const string &nombretexto)
 {
-    string nodo="",linea="";
+    string nodo="",linea="",lineaCosto="";
     fstream lectura;
     int numeroDeNodos=0;
     list<string> l_nodos;
@@ -366,10 +366,14 @@ void red::LeerTexto(const string &nombretexto)
     }
     getline(lectura,linea);
     while(lectura.good()){
+        int costotxt=0;
         linea.clear();
         getline(lectura,linea);
         getline(lectura,nodo);
-        Conectar2Enrutadores(linea,nodo,4);
+        getline(lectura,lineaCosto);
+
+        costotxt=lineaCosto[0]-48;
+        Conectar2Enrutadores(linea,nodo,costotxt);
     }
 
     lectura.close();
