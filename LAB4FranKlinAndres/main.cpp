@@ -14,10 +14,45 @@ int main()
     short opc = 0,costo=0;
     red *network = new red;
     string nombre,nombre2;
-    cout << "Ingrese:\n1.Ver tabla de la red.\n2.Ver tabla de un enrutador.\n3.Agregar enrutador a la red.\n";
-    cout << "4.Eliminar enrutador de la red.\n5.Conectar 2 enrutadores.\n6.Desconectar 2 enrutadores.\n";
-    cout << "7.Conocer costo de envio.\n8.Camino a seguir de un paquete.\n";
-    cout << "9.Cargar red desde un archivo.\n10.Generar red aleatoria.\n";
+    do{
+        cout<<"GENERAR REDDD  |1|"<<endl;
+        cout<<"RED DE UN TXT  |2|"<<endl;
+        cout<<"SALIRX         |3|"<<endl;
+        cin>>opc;
+        switch (opc) {
+
+        case 1:{
+            cin.ignore();
+
+            network->GenerarRedAleatoria();
+            opc=3;
+            break;
+        }
+
+        case 2:{
+            cin.ignore();
+            cout << "Nombre del texto a abrir: ";getline(cin,nombre);
+
+            network->LeerTexto(nombre);
+            opc=3;
+            break;
+
+        }
+
+
+
+        default:
+            cout << "\t  INGRESA OPCION NEW.\n";
+
+            break;
+        }
+    }while(opc !=3);
+
+
+    cout << "MENU DE RED :\n\t1.VER LA  RED.\n\t2.VER TABLA DE UN ENRUTADOR .\n\t3.AGREGAR UN ENRUTADOR  .\n";
+    cout << "\t4.ELIMINAR ENRUTADOR .\n\t5.CONECT 2 ENRUTADORES.\n\t6.DESCONECTAR 2 ENRUTADORES.\n";
+    cout << "\t7.CONOCER VALOR DE ENVIO .\n\t8.MEJOR CAMINO.\n";
+
     cout << "0.Salir.\nSeleccione una opcion: ";cin >> opc;
     while(opc!=0){
         switch (opc) {
@@ -138,33 +173,17 @@ int main()
                 cout << "Uno o ambos enrutados no existen.\n";
         }
         break;
-        case 9:{
-            cin.ignore(10000,'\n');
-            cout << "Nombre del texto a abrir: ";getline(cin,nombre);
 
-            delete network;
-            red *network= new red;
 
-            network->LeerTexto(nombre);
 
-        }
-        break;
-
-        case 10:{
-            cin.ignore(10000,'\n');
-            delete network;
-            red *network= new red;
-            network->GenerarRedAleatoria();
-        }
-        break;
         default:
             cout << "Opcion no valida.\n";
+
         }
-        cout << "\nIngrese:\n1.Ver tabla de la red.\n2.Ver tabla de un enrutador.\n3.Agregar enrutador.\n";
-        cout << "4.Eliminar enrutador de la red.\n5.Conectar 2 enrutadores.\n6.Desconectar 2 enrutadores.\n";
-        cout << "7.Conocer costo de envio.\n8.Camino a seguir de un paquete.\n";
-        cout << "9.Cargar red desde un archivo.\n10.Generar red aleatoria.\n";
-        cout << "0.Salir.\nSeleccione una opcion: ";cin >> opc;
+        cout << "MENU DE RED :\n\t1.VER LA  RED.\n\t2.VER TABLA DE UN ENRUTADOR .\n\t3.AGREGAR UN ENRUTADOR  .\n";
+        cout << "\t4.ELIMINAR ENRUTADOR .\n\t5.CONECT 2 ENRUTADORES.\n\t6.DESCONECTAR 2 ENRUTADORES.\n";
+        cout << "\t7.CONOCER VALOR DE ENVIO .\n\t8.MEJOR CAMINO.\n";
+        cout << "0.SALIR .\n\tSeleccione una opcion: ";cin >> opc;
     }
 
     delete network;
