@@ -1,0 +1,19 @@
+4 NUMERO DE NODOS OR ROUTER MI PEZ
+ROUTER _ NODOS
+A
+B
+C
+D
+//Aqui agregamos las conexiones por parejas 
+A
+B
+A
+C
+A
+D
+B
+C
+B
+D
+C
+D

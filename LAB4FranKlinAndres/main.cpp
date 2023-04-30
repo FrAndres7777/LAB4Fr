@@ -49,11 +49,12 @@ int main()
     }while(opc !=3);
 
 
-    cout << "MENU DE RED :\n\t1.VER LA  RED.\n\t2.VER TABLA DE UN ENRUTADOR .\n\t3.AGREGAR UN ENRUTADOR  .\n";
-    cout << "\t4.ELIMINAR ENRUTADOR .\n\t5.CONECT 2 ENRUTADORES.\n\t6.DESCONECTAR 2 ENRUTADORES.\n";
-    cout << "\t7.CONOCER VALOR DE ENVIO .\n\t8.MEJOR CAMINO.\n";
+    cout << "MENU DE RED :\n\t 1 VER LA  RED     |1|\n\t 2 VER TABLA DE UN ENRUTADOR  |2| \n\t 3 AGREGAR UN ENRUTADOR  |3|\n";
+    cout << "\t 4 ELIMINAR ENRUTADOR    |4| \n\t 5 CONECT 2 ENRUTADORES  |5| \n\t 6 DESCONECTAR 2 ENRUTADORES  |6|\n";
+    cout << "\t 7 CONOCER VALOR DE ENVIO |7|\n\t 8 MEJOR CAMINO    |8|\n";
+    cout << "\t 0 SALIR |0|\n\tSeleccione una opcion: ";
 
-    cout << "0.Salir.\nSeleccione una opcion: ";cin >> opc;
+    cin >> opc;
     while(opc!=0){
         switch (opc) {
         case 1:{
@@ -180,10 +181,10 @@ int main()
             cout << "Opcion no valida.\n";
 
         }
-        cout << "MENU DE RED :\n\t1.VER LA  RED.\n\t2.VER TABLA DE UN ENRUTADOR .\n\t3.AGREGAR UN ENRUTADOR  .\n";
-        cout << "\t4.ELIMINAR ENRUTADOR .\n\t5.CONECT 2 ENRUTADORES.\n\t6.DESCONECTAR 2 ENRUTADORES.\n";
-        cout << "\t7.CONOCER VALOR DE ENVIO .\n\t8.MEJOR CAMINO.\n";
-        cout << "0.SALIR .\n\tSeleccione una opcion: ";cin >> opc;
+        cout << "MENU DE RED :\n\t 1 VER LA  RED    |1|\n\t 2 VER TABLA DE UN ENRUTADOR  |2| \n\t 3 AGREGAR UN ENRUTADOR  |3|\n";
+        cout << "\t4 ELIMINAR ENRUTADOR   |4| \n\t5 CONECT 2 ENRUTADORES  |5| \n\t6 DESCONECTAR 2 ENRUTADORES  |6|\n";
+        cout << "\t7 CONOCER VALOR DE ENVIO |7|\n\t8 MEJOR CAMINO |8|\n";
+        cout << "\t0 SALIR |0|\n\tSeleccione una opcion: ";cin >> opc;
     }
 
     delete network;
