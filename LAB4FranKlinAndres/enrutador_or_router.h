@@ -11,11 +11,11 @@ using namespace std;
 class enrutador
 {
 private:
-    //caracteristicas privadas
+    //caracteristicas privadasSS
     string nombre;
 
 public:
-    //caracteristicas publicas
+    //caracteristicas publicasSS
     map<string,int> conexiones;
     map<string,pair<int,string>> costoNodos;
     map<string,int>::iterator it;
