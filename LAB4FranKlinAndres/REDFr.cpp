@@ -1,4 +1,7 @@
 #include "REDFr.h"
+#include "Nodo_enrutador_or_router.h"
+
+
 red::red()                // Constructor de la clase red
 {
 }

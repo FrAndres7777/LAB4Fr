@@ -1,6 +1,7 @@
 
 #ifndef NODO_ENRUTADOR_OR_ROUTER_H
 #define NODO_ENRUTADOR_OR_ROUTER_H
+
 #include <iostream>
 #include <map>
 #include <utility>
@@ -11,11 +12,11 @@ using namespace std;
 class enrutador
 {
 private:
-    //caracteristicas privadasSS
+    //caracteristicas privadas
     string nombre;
 
 public:
-    //caracteristicas publicasSS
+    //caracteristicas publicas
     map<string,int> conexiones;
     map<string,pair<int,string>> costoNodos;
     map<string,int>::iterator it;
@@ -33,6 +34,7 @@ public:
     void TablaConexiones();
     void TablaCostos();
 };
+
 
 enrutador::enrutador()
 {
@@ -74,7 +76,7 @@ void enrutador::Agregar_Conexion(const string &name, const string &anterior, int
 void enrutador::TablaConexiones()
 {
 
-    cout << " \t";// PRIMERA PARTE  A B C D F E , , , (SUPERIOR)
+    cout << " \t";// PRIMERA PARTE  A B C D F  (SUPERIOR)
     for(it=conexiones.begin();it!=conexiones.end();it++){
         cout << it->first << "\t";
     }
@@ -92,7 +94,7 @@ void enrutador::TablaConexiones()
 void enrutador::TablaCostos()
 {
 
-    cout << " \t";// PRIMERA PARTE  A B C D F ,, ,, , ,  (SUPERIOR)
+    cout << " \t";// PRIMERA PARTE  A B C D F  (SUPERIOR)
     for(it2=costoNodos.begin();it2!=costoNodos.end();it2++){
         cout << it2->first << "\t";
     }
@@ -106,9 +108,6 @@ void enrutador::TablaCostos()
 
     cout << endl;
 }
-
-
-
 
 
 #endif // NODO_ENRUTADOR_OR_ROUTER_H
