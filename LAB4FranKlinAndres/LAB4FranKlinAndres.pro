@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        Nodo_enrutador_router.cpp \
         REDFr.cpp \
         main.cpp
 
