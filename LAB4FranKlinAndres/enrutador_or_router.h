@@ -92,7 +92,7 @@ void enrutador::TablaConexiones()
 void enrutador::TablaCostos()
 {
 
-    cout << " \t";// PRIMERA PARTE  A B C D F  (SUPERIOR)
+    cout << " \t";// PRIMERA PARTE  A B C D F ,, ,, , ,  (SUPERIOR)
     for(it2=costoNodos.begin();it2!=costoNodos.end();it2++){
         cout << it2->first << "\t";
     }
